@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promto | Hangman</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="/dist/logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"/>
+</head>
+<body id="atv1" >
+<!-- Header -->
+<header id="header-inner">
+    <div class="container">
+      <nav id="main-nav">
+        <img src="img/logo.png" alt="Our Logo" id="logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Activities</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <h1 class="hang">Hangman</h1>
+    <p>Find the Hidden word - enter a letter</p>
+    <div class="game-container">
+        <svg height="250" width="250" class="figure-container">
+            <!-- Rode -->
+        <line x1="60" y1="20" x2="140" y2="20"/>
+        <line x1="140" y1="20" x2="140" y2="50"/>
+        <line x1="60" y1="20" x2="60" y2="230"/>
+        <line x1="20" y1="230" x2="100" y2="230"/>
+
+        <!-- HUaman -->
+        <circle cx="140" cy="70" r="20" class="human"   />
+        <line x1="140" y1="90" x2="140" y2="150" class="human" />
+        <line x1="140" y1="120" x2="120" y2="100" class="human"  />
+        <line x1="140" y1="120" x2="160" y2="100" class="human"  />
+        <line x1="140" y1="150" x2="120" y2="180" class="human"  />
+        <line x1="140" y1="150" x2="160" y2="180" class="human"  />
+        </svg>
+
+        <div class="wrong-letters-container">
+            <div id="wrong-letters">
+            </div>
+        </div>
+
+        <div class="word" id="word">
+        </div>
+    </div>
+
+    <!-- Container 4 final msg -->
+
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <div id="final-message"><h2></h2></div>
+            <button id="play-button">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Notification -->
+
+    <div class="notification-container" id="notification-container">
+        <p>You have already entered this letter</p>
+    </div>
+
+    <script src="/dist/js/hangman.js"></script>
+</body>
+</html>
