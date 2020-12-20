@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ed38bfe235.js"crossorigin="anonymous" ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon"  href="/dist/logo.ico">
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Promto | Memory Cards</title>
+</head>
+<body id="atv4" >
+<!-- Header -->
+<header id="header-inner">
+    <div class="container">
+      <nav id="main-nav">
+        <img src="img/logo.png" alt="Our Logo" id="logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Activities</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <button id="clear" class="clear-memo btn-memo">
+        <i class="fas fa-trash"></i> Clear Cards
+    </button>
+
+    <h1 class="memo" >Memory Cards
+        <button id="show" class="btn-small-memo btn-memo">
+            <i class="fas fa-plus"></i>Add New Card
+        </button>
+    </h1>
+
+    <div id="cards-container" class="cards">
+        <!-- <div class="card active">
+            <div class="inner-card">
+                <div class="inner-card-front">
+                    <p>What is PHP?</p>
+                </div>
+                <div class="inner-card-back">
+                    <p>
+                        A programming language
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <div class="inner-card-front">
+                    <p>What is PHP?</p>
+                </div>
+                <div class="inner-card-back">
+                    <p>
+                        A programming language
+                    </p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="navigation-memo">
+        <button id="prev" class="nav-button-memo">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+
+        <p id="current"></p>
+
+        <button id="next" class="nav-button-memo">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <div id="add-container" class="add-container">
+        <h1 class="memo">Add New Card
+            <button id="hide" class="btn-memo btn-small-memo btn-ghost-memo">
+                <i class="fas fa-times"></i>
+            </button>
+        </h1>
+
+        <div class="form-group">
+            <label for="question">Question</label>
+            <textarea id="question" placeholder="Enter a question..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="answer">Answer</label>
+            <textarea id="answer" placeholder="Enter an answer.."></textarea>
+        </div>
+        <button id="add-card" class="btn-memo">
+            <i class="fas fa-plus"></i>Add Card
+        </button>
+    </div>
+
+
+    <script src="/dist/js/memory.js"></script>
+</body>
+</html>
